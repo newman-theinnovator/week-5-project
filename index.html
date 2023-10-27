@@ -4,93 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JHomes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="header__logo">
-                <figure>
-                    <img src="./assets/header-logo.svg" alt="header logo">
-                </figure>
-                <span>JHomes</span>
-            </div>
-            <ul class="nav__links">
-                <li class="nav__link">home</li>
-                <li class="nav__link">about</li>
-                <li class="nav__link">login</li>
-                <li class="nav__link">sign up</li>
-            </ul>
-        </nav>
-
-        <div class="header-left__section">
-            <h1>elevate your home decor with us</h1>
-            <p>Where Your Imagination Meets Design Reality</p>
-            <p>Explore Unique Pieces & Create Your Dream Home</p>
-            <button>find your style</button>
-            <div class="header__features">
-                <div class="header__feature">
-                    <figure>
-                        <img src="./assets/Lock 1.svg" alt="">
+    <nav>
+        <div class="row">
+            <div class="nav__container">
+                <div class="header__logo">
+                    <figure class="logo__wrapper">
+                        <img src="./assets/header-logo.svg" alt="header logo">
                     </figure>
-                    <span> fast & secure shopping</span>
+                    <span class="logo__text">JHomes</span>
                 </div>
-                <div class="header__feature">
-                    <figure>
-                        <img src="./assets/Buy 2.svg" alt="">
-                    </figure>
-                    <span> shop with confidence</span>
-                </div>
-                <div class="header__feature">
-                    <figure>
-                        <img src="./assets/Dollar Square.svg" alt="">
-                    </figure>
-                    <span> quick & safe checkout</span>
-                </div>
+                <ul class="nav__links">
+                    <li class="nav__link">Home</li>
+                    <li class="nav__link">About</li>
+                    <li class="nav__link">Login</li>
+                    <li class="nav__link text__yellow">Sign Up</li>
+                </ul>
             </div>
         </div>
-        <figure>
-            <img src="./assets/first-house-picture.png" alt="first-house-picture">
-        </figure>
+    </nav>
+
+    <header>
+        <div class="row">
+            <div class="hero__container">
+            <div class="hero-left__section">
+                <h1>elevate your home <span class="text__yellow">decor</span> with us</h1>
+                <p class="hero__para">Where Your Imagination Meets Design Reality
+                  <br> Explore Unique Pieces & Create Your Dream Home</p>
+                <div class="hero__left--bottom">
+                <button class="hero__button">find your style</button>
+                <div class="hero__features">
+                    <div class="hero__feature">
+                        <figure>
+                            <img src="./assets/Lock 1.svg" alt="">
+                        </figure>
+                        <span class="hero__feature--text"> Fast & Secure Shopping</span>
+                    </div>
+                    <div class="hero__feature">
+                        <figure>
+                            <img src="./assets/Buy 2.svg" alt="">
+                        </figure>
+                        <span class="hero__feature--text"> Shop with Confidence</span>
+                    </div>
+                    <div class="hero__feature">
+                        <figure>
+                            <img src="./assets/Dollar Square.svg" alt="">
+                        </figure>
+                        <span class="hero__feature--text"> Quick & Safe Checkout</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="hero__right">
+                <img src="./assets/first-house-picture.png" alt="first-house-picture">
+            </figure>
+        </div>
+        </div>
     </header>
+
     <main>
         <section>
+            <div class="row">
+            <div class="first-section__container">
             <div class="first-section__left">
                 <h2>What’s New?
                     Stay Ahead of the Curve with What's New </h2>
                 <p>Discover the latest additions to our catalog, from cutting-edge furniture to emerging design trends.
                     Explore our curated collection of fresh arrivals, ensuring your space is always on the forefront of
                     style and innovation.</p>
-                    <button>learn more</button>
+                <button>learn more</button>
             </div>
 
             <div class="first-section__right">
-                    <div>
-                        <figure>
-                            <img src="./assets/Ellipse 27.svg" alt="">
-                        </figure>
-                        <figure>
-                            <img src="./assets/eye.svg" alt="">
-                        </figure>
-                        <span>33,567,577</span><span>Views</span>
-                    </div>
+                <div>
                     <figure>
-                        <img src="./assets/room-picture.png" alt="">
+                        <img src="./assets/Ellipse 27.svg" alt="">
                     </figure>
-                    <div>
-                        <figure>
-                            <img src="./assets/Ellipse 27.svg" alt="">
-                        </figure>
-                        <figure>
-                            <img src="./assets/eye.svg" alt="">
-                        </figure>
-                        <span>50,567,577</span><span>Clicks</span>
-                    </div>
+                    <figure>
+                        <img src="./assets/eye.svg" alt="">
+                    </figure>
+                    <span>33,567,577</span><span>Views</span>
                 </div>
+                <figure>
+                    <img src="./assets/room-picture.png" alt="">
+                </figure>
+                <div>
+                    <figure>
+                        <img src="./assets/Ellipse 27.svg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/eye.svg" alt="">
+                    </figure>
+                    <span>50,567,577</span><span>Clicks</span>
+                </div>
+            </div>
+        </div>
+    </div>
         </section>
         <section>
-            
+
             <div class="second-section__left">
                 <div>
                     <figure>
@@ -108,7 +124,7 @@
                     <figure>
                         <img src="./assets/whatsapp.svg" alt="">
                     </figure>
-                    
+
                     <figure>
                         <img src="./assets/Frame 16.png" alt="">
                     </figure>
@@ -116,46 +132,49 @@
                         <img src="./assets/Love l 1.png" alt="">
                     </figure>
                 </div>
-                </div>
-                <div class="second-section__right">
-                    <h2>About Us</h2>
-                    <p>We're dedicated to transforming houses into personalized homes. With years of expertise, we curate and craft exceptional home decorations to reflect your unique style and vision.</p>
-                    <ul>
-                        <li>Collaborate with our experts to revamp your space, from color palettes to furniture placement, reflecting your style.</li>
-                        <li>Elevate your space with carefully selected artworks to inspire your decor.</li>
-                        <li>We handle logistics, from delivery to professional installation, saving you time and effort.</li>
-                    </ul>
-                    <button>view projects</button>
-                </div>
-             
+            </div>
+            <div class="second-section__right">
+                <h2>About Us</h2>
+                <p>We're dedicated to transforming houses into personalized homes. With years of expertise, we curate
+                    and craft exceptional home decorations to reflect your unique style and vision.</p>
+                <ul>
+                    <li>Collaborate with our experts to revamp your space, from color palettes to furniture placement,
+                        reflecting your style.</li>
+                    <li>Elevate your space with carefully selected artworks to inspire your decor.</li>
+                    <li>We handle logistics, from delivery to professional installation, saving you time and effort.
+                    </li>
+                </ul>
+                <button>view projects</button>
+            </div>
+
         </section>
     </main>
     <footer>
         <div class="footer__logo">
-            <figure>
+            <figure class="logo__wrapper">
                 <img src="./assets/footer-logo.svg" alt="">
             </figure>
-            <span>JHomes</span>
+            <span class="logo__text">JHomes</span>
         </div>
         <div class="footer__right">
             <p>Copyright @Joygirl. Powered by JHomes</p>
             <div class="footer__social-icons">
-            <figure>
-                <img src="./assets/Facebook.png" alt="">
-            </figure>  
-            <figure>
-                <img src="./assets/linkedin.svg" alt="">
-            </figure>  
-            <figure>
-                <img src="./assets/instagram.svg" alt="">
-            </figure>  
-            <figure>
-                <img src="./assets/telegram.svg" alt="">
-            </figure>
-            <figure>
-                <img src="./assets/whatsapp.svg" alt="">
-            </figure>
-        </div>
+                <figure>
+                    <img src="./assets/Facebook.png" alt="">
+                </figure>
+                <figure>
+                    <img src="./assets/linkedin.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="./assets/instagram.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="./assets/telegram.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="./assets/whatsapp.svg" alt="">
+                </figure>
+            </div>
         </div>
 
     </footer>
