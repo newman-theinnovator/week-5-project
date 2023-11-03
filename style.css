@@ -15,8 +15,14 @@
   padding: 24px 0;
 }
 
+main {
+  max-width:1440px;
+  width: 100%;
+  margin: auto;
+}
+
 .row {
-  margin: 0 7.5rem;
+  margin: 2% 7%;
 }
 
 .text__yellow {
@@ -51,20 +57,20 @@
 .hero__container {
   display: flex;
   align-items: center;
-  margin: 100px 0;
-  gap: 40px;
+  margin: 5% 0;
+  gap: 2.8rem;
 }
 
 .hero-left__section {
-  width: 60%;
-  gap: 40px;
+  width: 50%;
+  gap: 2.8rem;
   display: flex;
   flex-direction: column;
 }
 
 h1 {
   font-family: "Clash Grotesk";
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: capitalize;
 }
 
@@ -75,6 +81,8 @@ p {
 
 .hero__features {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -114,20 +122,20 @@ p {
 }
 
 .hero__right {
-  width: 40%;
+  width: 50%;
 }
 
 .first-section__container {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 5%;
   justify-content: space-between;
   padding: 64px 120px;
   background: #f5faff;
 }
 
 .first-section__left {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,8 +169,12 @@ h2 {
 }
 
 .first-section__right {
-  width: 50%;
+  width: 45%;
   position: relative;
+}
+
+.first-section--img {
+  width: 100%;
 }
 
 .card {
@@ -172,6 +184,7 @@ h2 {
 
 .card,
 .cardd {
+  width: 30%;
   position: absolute;
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
   display: inline-flex;
@@ -242,11 +255,12 @@ h2 {
   margin: 12rem 1rem;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 10%;
+  width: 100%;
 }
 
 .second-section__left {
-  width: 60%;
+  width: 50%;
   position: relative;
 }
 
@@ -255,6 +269,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 40%;
   gap: 24px;
   align-self: stretch;
 }
@@ -270,6 +285,7 @@ h2 {
   border-radius: 20px;
   background: #fff;
   width: 60%;
+  font-size: 70%;
   /* Shadow 4 */
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
@@ -280,6 +296,14 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
+}
+
+.img {
+  width: 100%;
+}
+
+.second-section__left--img {
+  width: 100%;
 }
 
 .owner__card--details {
@@ -338,4 +362,78 @@ footer {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+@media (min-width: 840px) {
+  .first-section__container {
+    gap: 20%;
+  }
+
+  .first-section__left {
+    width: 40%;
+  }
+
+  .first-section__right {
+    width: 40%;
+  }
+
+  .menu-img {
+    display: hidden;
+  }
+}
+
+@media (max-width: 840px) {
+  .nav__links, br {
+    display: none;
+  }
+
+  .hero__container, .first-section__container, .second-section__container{
+    flex-direction: column;
+    margin: auto;
+    gap: 5rem;
+    width: 100%;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2, h1, button, p, .hero__feature--text {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .first-section--img {
+    width: 100%;
+  }
+
+  .card, .cardd {
+    width: 50%;
+  }
+
+  .hero__right, .second-section__left, .second-section__right, .first-section__left, .first-section__right {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .owner__card--text {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+ .card,.cardd, .owner__card {
+  display: none;
+ }
+
+ br {
+  content: "";
+ }
+
+ img {
+  width: 100%;
+ }
 }
